@@ -217,6 +217,10 @@ def webpage():
                 });
             }
 
+            function stopServos() {
+                sendCommand({ action: 'stop' });
+            }
+
             // Command sender
             
             const PICO_HOST = location.hostname === '' ? 'http://pico.local' : '';
@@ -237,6 +241,9 @@ def webpage():
                         break;
                     case 'shoot':
                         url = `${PICO_HOST}/shoot`;
+                        break;
+                    case 'stop':
+                        url = `${PICO_HOST}/stop`;
                         break;
                     default:
                         console.warn('Unknown action'); return;
