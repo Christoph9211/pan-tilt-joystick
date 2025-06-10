@@ -106,7 +106,7 @@ def webpage():
                 <button onclick="stopServos()">Stop</button>
             </div>
             <script>
-            const joystickKnob = document.querySelector('.joystick-knob');
+            const joystickKnob = document.querySelector('.joystick-handle');
             const joystickContainer = document.querySelector('.joystick-container');
             const viewport = document.querySelector('.viewport');
             const crosshair = document.querySelector('.crosshair');
